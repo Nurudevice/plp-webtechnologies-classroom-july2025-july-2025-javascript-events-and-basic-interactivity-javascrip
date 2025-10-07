@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Interactivity Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Event Handling & Interactivity</h1>
+      <p>Learn Events • DOM Manipulation • Form Validation</p>
+    </header>
+
+    <main>
+      <!-- Part 1: Event Handling -->
+      <section class="card" id="events-section">
+        <h2>🎮 Part 1: Event Handling</h2>
+        <button id="clickMeBtn">Click Me!</button>
+        <p id="clickMessage"></p>
+
+        <div id="hoverBox">Hover over me!</div>
+        <p id="hoverMessage"></p>
+
+        <input type="text" id="keypressInput" placeholder="Type something..." />
+        <p id="keypressOutput"></p>
+      </section>
+
+      <!-- Part 2: Interactive Elements -->
+      <section class="card" id="interactive-section">
+        <h2>✨ Part 2: Interactive Elements</h2>
+
+        <!-- Feature 1: Light/Dark Mode -->
+        <button id="themeToggleBtn">🌙 Toggle Dark Mode</button>
+
+        <!-- Feature 2: Counter Game -->
+        <div id="counterBox">
+          <h3>Button Click Counter</h3>
+          <p>Count: <span id="counterValue">0</span></p>
+          <button id="increaseBtn">Increase</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </section>
+
+      <!-- Part 3: Form Validation -->
+      <section class="card" id="form-section">
+        <h2>📋✅ Part 3: Form Validation</h2>
+        <form id="signupForm" novalidate>
+          <label>
+            Name:
+            <input type="text" id="name" placeholder="Enter your name" />
+            <span class="error" id="nameError"></span>
+          </label>
+
+          <label>
+            Email:
+            <input type="email" id="email" placeholder="Enter your email" />
+            <span class="error" id="emailError"></span>
+          </label>
+
+          <label>
+            Password:
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+            <span class="error" id="passwordError"></span>
+          </label>
+
+          <button type="submit">Submit</button>
+          <p id="formSuccess"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Interactive JavaScript Project | Built by Nurudevice 💻</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
